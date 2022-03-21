@@ -1,11 +1,16 @@
+#--- setup ---#
+
 import random
 import time
 import sys
 import math
 import pygame
+import cl
+
 pygame.init()
+#--- set vars ---#
 clock = pygame.time.Clock()
-screen = pygame.display.set_mode((800, 800))
+screen = pygame.display.set_mode([800, 800])
 pygame.display.set_caption("Space Invaders")
 background = pygame.image.load("background.png")
 background = pygame.transform.scale(background, (800, 600))
@@ -21,6 +26,8 @@ playerImg5 = pygame.image.load("player5.png")
 playerImg5 = pygame.transform.scale(playerImg5, (64, 64))
 playerwinner = pygame.image.load("winner.png")
 playerwinner = pygame.transform.scale(playerwinner, (64, 64))
+
+
 playerX = 370
 playerY = 480
 playerX_change = 0
