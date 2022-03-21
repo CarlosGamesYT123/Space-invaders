@@ -8,6 +8,12 @@ import pygame
 import cl
 
 pygame.init()
+
+
+cl.setup()
+
+
+
 #--- set vars ---#
 clock = pygame.time.Clock()
 screen = pygame.display.set_mode([800, 800])
