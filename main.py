@@ -16,7 +16,7 @@ cl.setup()
 
 #--- set vars ---#
 clock = pygame.time.Clock()
-screen = pygame.display.set_mode([800, 800])
+screen = pygame.display.set_mode((800, 800))
 pygame.display.set_caption("Space Invaders")
 background = pygame.image.load("background.png")
 background = pygame.transform.scale(background, (800, 600))
